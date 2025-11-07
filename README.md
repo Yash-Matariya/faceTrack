@@ -22,7 +22,7 @@ A Python-based attendance system using YOLOv8 and DeepFace with a Tkinter GUI fo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yuishigam1/faceTrack.git
+git clone https://github.com/Yash-Matariya/faceTrack.git
 cd faceTrack
 ```
 
