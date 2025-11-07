@@ -29,13 +29,13 @@ cd faceTrack
 2. Set up and run (single-line command does the downloading, environment setup, dependency install, and runs the GUI):
 
 ```bash
-curl -o yolov8x-face.pt https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8x-face.pt \
-  && curl -o shape_predictor_68_face_landmarks.dat.bz2 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2 \
-  && bunzip2 shape_predictor_68_face_landmarks.dat.bz2 \
-  && python -m venv face_recognition_env \
-  && . face_recognition_env/bin/activate 2>/dev/null || face_recognition_env\Scripts\activate \
-  && pip install -r requirements.txt \
-  && python gui.py
+curl -L -o yolov8x-face.pt https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8x-face.pt
+curl -L -o shape_predictor_68_face_landmarks.dat.bz2 http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+bunzip2 shape_predictor_68_face_landmarks.dat.bz2
+python3 -m venv face_recognition_env
+source face_recognition_env/bin/activate
+pip install -r requirements.txt
+python gui.py
 ```
 
 ### What this does
